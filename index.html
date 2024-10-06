@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vincent Kiplangat Sang Masway Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Header Section -->
+<header>
+    <h1>KIMASWAI JUNIOR</h1>
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="active">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#inspiration">Inspiration Hub</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="whatsapp-button" onclick="openWhatsApp()">WhatsApp</button>
+</header>
+
+ 
+
+  <!-- Home Section -->
+<section id="home">
+    <div class="section-content">
+        <h1>Welcome to My Portfolio</h1>
+        <img src="profilepic.jpeg" alt="Welcome to my Portfolio" class="section-image">
+        <p>Hi, I'm Vincent Kiplangat Sang Masway, a passionate tech enthusiast.</p>
+    </div>
+    <div class="buttons">
+        <a href="YOUR_CV_LINK.pdf" id="cv-button" class="button">Download CV</a>
+        <button id="whatsapp-button" class="button">WhatsApp</button>
+    </div>
+</section>
+
+<div class="horizontal-sections">
+    <div class="section about-me">
+        <h2>About Me</h2>
+        <img src="images/about.jpg" alt="About Me" class="section-image">
+        <p>Hello! I'm Vincent Kiplangat Sang Masway, a passionate tech enthusiast, educator, and author dedicated to making a difference in the world through innovation and technology. With a strong background in Artificial Intelligence, web development, and software engineering, I thrive on creating solutions that tackle real-world challenges.</p>
+        <p>I am the founder of KIITE Inspirations, an initiative that focuses on empowering individuals through knowledge, inspiration, innovation, transformation, and empowerment (KIITE). We aim to foster resilience and personal growth by providing resources, mentorship, and support for those seeking to achieve their dreams.</p>
+        <p>Additionally, I lead Kimaswai Global Destiny Network Africa, a platform designed to connect and uplift young people across Africa. Our mission is to create a network of support, encouragement, and collaboration among youth, helping them navigate challenges and discover their potential. We believe in the power of community and mentorship to inspire positive change and transformation.</p>
+        <p>My journey hasn't always been easy; I grew up in a humble family and faced numerous challenges along the way. However, these experiences shaped my character and fueled my passion for personal growth and community development. I firmly believe that with the right mindset and determination, we can overcome any obstacles that life presents.</p>
+        <p>In addition to my technical skills, I’m an avid motivational speaker and writer, constantly seeking opportunities to share my knowledge and inspire others. I have authored books that aim to change mindsets and promote personal development, and I actively engage in mentorship programs to support young talents in my community.</p>
+        <p>In my free time, you can find me exploring new technologies, reading inspiring books, or volunteering to help those in need. I’m excited to connect with like-minded individuals and collaborate on innovative projects that drive positive change.</p>
+        <p>Thank you for visiting my portfolio, and I hope to connect with you soon!</p>
+    </div>
+    <div class="section skills">
+        <h2>Skills</h2>
+        <img src="images/skills.jpg" alt="Skills" class="section-image">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>AI Development</li>
+            <li>Web Development</li>
+        </ul>
+    </div>
+    <div class="section projects">
+        <h2>Projects</h2>
+        <img src="images/projects.jpg" alt="Projects" class="section-image">
+        <ul>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
+        </ul>
+    </div>
+    <div class="inspiration-item">
+        <h3>My Books</h3>
+        <p>A collection of my written works.</p>
+        <ul>
+            <li><a href="#book1">Book Title 1</a></li>
+            <li><a href="#book2">Book Title 2</a></li>
+            <li><a href="#book3">Book Title 3</a></li>
+        </ul>
+    </div>
+    <div class="inspiration-item">
+        <h3>Manuscripts</h3>
+        <p>Explore my unpublished manuscripts.</p>
+        <ul>
+            <li><a href="#manuscript1">Manuscript Title 1</a></li>
+            <li><a href="#manuscript2">Manuscript Title 2</a></li>
+        </ul>
+    </div>
+    <div class="inspiration-item">
+        <h3>Inspiration Videos</h3>
+        <p>Watch inspiring videos that motivate me.</p>
+        <ul>
+            <li><a href="#video1">Inspiration Video 1</a></li>
+            <li><a href="#video2">Inspiration Video 2</a></li>
+        </ul>
+    </div>
+</div>
+<!-- Contact Section -->
+<section id="contact">
+    <div class="section-content">
+        <h2>Contact Me</h2>
+        <img src="images/about.jpg" alt="About Me" class="section-image">
+        <!-- Button to open the form -->
+        <button id="contact-button" class="btn-contact">Contact Me</button>
+
+        <!-- Contact Form (initially hidden) -->
+        <form id="contact-form" style="display: none;">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="btn-submit">Send Message</button>
+                <button type="button" class="close-button">Close</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Chat with AI Section -->
+<section id="chat">
+    <div class="section-content">
+        <h2>Need help? Chat with AI</h2>
+        <img src="images/about.jpg" alt="About Me" class="section-image">
+        <button id="chat-button">Chat with AI</button>
+        <div id="chat-box" style="display:none;">
+            <div class="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type your message here">
+            <button id="send-chat">Send</button>
+            <button class="close-chat">Close</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <h2>Contact Me</h2>
+    <img src="images/about.jpg" alt="About Me" class="section-image">
+    <p>If you have any questions or want to get in touch, feel free to reach out!</p>
+    <div class="footer-buttons">
+        <a href="mailto:bloginfo8546@gmail.com">Email Me</a>
+        <a id="whatsapp-button" href="#">WhatsApp</a>
+        <a id="cv-button" href="#">Download CV</a>
+        <a id="chat-button" href="#">Chat with AI</a>
+        <a href="https://github.com/Masway2024?tab=repositories" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/brand-vincent-kiplangat" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/Kimaswai_j" target="_blank">Twitter</a>
+    </div>
+    <p>&copy; 2024 Vincent Kiplangat Sang Masway. All rights reserved.</p>
+</footer>
+
+<!-- Chat with AI Section -->
+<section id="chat" style="display:none;">
+    <div id="chat-box">
+        <h2>Chat with AI</h2>
+        <div class="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type your message here">
+        <button id="send-chat">Send</button>
+        <button class="close-chat" id="close-chat">Close</button>
+    </div>
+</section>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+        
+        
